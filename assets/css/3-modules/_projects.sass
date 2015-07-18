@@ -1,0 +1,74 @@
+.portfolio
+	h1
+		font-size: 1.2em
+		color: $muted-text
+		letter-spacing: 3px
+		text-transform: uppercase
+		margin-top: 50px
+
+	.project-single
+		margin-bottom: 80px
+		+clearfix
+
+		h2 
+			margin-bottom: 0
+
+	.project-meta
+		ul 
+			list-style-type: none
+			padding: 0
+			margin-top: 5px
+			margin-bottom: 20px
+
+			li
+				display: inline-block
+				color: $muted-text
+				margin-right: 10px
+
+	.notice
+		background-color: $muted-text
+		color: #fff
+		border-radius: 3px 
+		display: inline-block
+		padding: 5px 10px
+		margin-bottom: 20px
+
+		p 
+			margin: 0
+
+			i 
+				margin-right: 5px
+
+	.project-thumbnail
+		img 
+			max-width: 100%
+
+			@media screen and (max-width: 990px)
+				margin-bottom: 15px
+
+	.project-desc
+		p 
+			font:
+				size: 18px
+				weight: 300
+		
+		.download-btn
+			padding: 10px 20px
+			color: $secondary-color
+			border: 1px solid $secondary-color
+			border-radius: 3px
+			text-transform: uppercase
+			display: inline-block
+			margin: 20px 5px 20px 0
+			+transition
+
+			&:hover
+				text-decoration: none
+				background-color: $secondary-color
+				color: #fff
+			
+			&:focus
+				text-decoration: none
+			
+			i 
+				margin-right: 5px
