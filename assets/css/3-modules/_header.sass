@@ -2,16 +2,20 @@ html,body
 	height: 100%
 
 header
-	height: 100%
 	background: url(../img/background.jpg) no-repeat no-repeat 
 	background-size: cover
 	background-attachment: fixed
-	
+
+	//for a fix on mobile breaking out of 100% view
+	@media screen and (min-width: 555px)
+		height: 100%
+
 	.backdrop
 		background-color: rgba(0,0,0,0.7)
 		height: 100%
 
 	.header-wrapper
+		height: 100% //ie won't center when there is only min-height and no height
 		min-height: 100%
 		+display(flex)
 		+align-items(center)

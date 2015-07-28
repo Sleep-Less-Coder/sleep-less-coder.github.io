@@ -1,0 +1,28 @@
+div.simpleTabs
+	padding: 0
+	margin: 40px 0 0 0
+
+	ul.simpleTabsNavigation
+		margin-left: 0
+
+		li a
+			display: inline-block
+			font-family: 'Open Sans'
+			border: none
+			font-size: 16px
+			font-weight: bold
+			text-transform: uppercase
+			color: $text-color
+			opacity: 0.5
+			padding: 15px 20px
+
+			&:hover
+				opacity: 1
+
+	ul.simpleTabsNavigation li a.current
+		border-bottom: 5px solid $secondary-color
+		opacity: 1
+
+	div.simpleTabsContent
+		padding: 0 0 0 0
+		border: none
